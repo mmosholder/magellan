@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1 Hi, welcome to #{description}
+
+    if next === 'none'
+        h2 Journey Complete!
+    else
+        a(href="/destinations/#{next}") Next
